@@ -12,3 +12,7 @@ env/
 # Testing
 .pytest_cache/
 .coverage
+
+# Database
+fast-api-app/books.db
+fast-api-app/test.db

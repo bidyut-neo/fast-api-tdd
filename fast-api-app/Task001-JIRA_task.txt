@@ -1,0 +1,30 @@
+Task number - Task-001
+Title - Authentication layer and only allow logged in users to access the CRUD APIs.
+
+
+Acceptance criteria - 
+1. Create sign up api
+  1.1. First name
+  1.2. Last name
+  1.3. username
+2. Create Login api
+   2.1. username
+   2.2. password
+   2.3. JWT should expire after 5 minutes.
+3. Create logout api
+  3.1. Expire current api JWT token.
+4. Create change password api.
+5. Only allow logged in users to be able to access the following APIs-
+    | POST | `/books/` | Create a new book |
+    | GET | `/books/` | Get all books |
+    | GET | `/books/{id}` | Get a specific book by ID |
+    | PUT | `/books/{id}` | Update a book |
+    | DELETE | `/books/{id}` | Delete a book |
+6. If anyone without the JWT token in header calls the api return an error.
+7. The anyone uses an expired jwt token then give an error.
+8. Add these changes in swagger doc.
+9. Add unit tests.
+
+Technical details-
+1. Maintain same code style and patterns used.
+
